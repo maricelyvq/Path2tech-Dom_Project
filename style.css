@@ -1,0 +1,98 @@
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4c5baf;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: url('https://via.placeholder.com/1920x400') no-repeat center center/cover;
+            color: rgb(21, 5, 66);
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 0 2rem;
+        }
+
+        .book {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .book img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .book h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .book p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
