@@ -1,35 +1,54 @@
-<div class="header">
-    <h1>Go Ahead, Add Your Favorite Book!</h1>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class = "title">
-    <h3>Book Title</h3>
-    <input type="text" placeholder="Favorite Book">
-</div>
+    <title>Add Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<div class = "author">
-    <h3>Book Author</h3>
-    <input type="text" placeholder="Favorite Author">
-</div>
+<body>
+    <form name="myform" id="bookForm">
+        <div class="header">
+            <h1>Go Ahead, Add Your Favorite Book!</h1>
+        </div>
+        
+        <div class = "title">
+            <h3>Book Title</h3>
+            <input type="text" placeholder="Favorite Book">
+        </div>
+        
+        <div class = "author">
+            <h3>Book Author</h3>
+            <input type="text" placeholder="Favorite Author">
+        </div>
+        
+        <div class = "book_publisher">
+            <h3>Book Publisher</h3>
+            <input type="text" placeholder="Favorite Publisher">
+        </div>
+        <br>
+        
+        <div class = "add_book">
+            <button type="submit" id="mybutton">I Want That Book!</button>
+        </div>
+        
+    </form>
+    
+    
+    
+    <div class="stock">
+    <h1>You Read It, We Got It!</h1>
+    <table border = "3">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publisher</th>
+        </tr>
+    </table>
+    </div> 
+</body>
+</html>
 
-<div class = "book_publisher">
-    <h3>Book Publisher</h3>
-    <input type="text" placeholder="Favorite Publisher">
-</div>
-<br>
-
-<div class = "add_book">
-    <button type="button" onclick="">I Want That Book!</button>
-</div>
-
-
-<div class="stock">
-<h1>You Read It, We Got It!</h1>
-<table border = "3">
-    <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Publisher</th>
-    </tr>
-</table>
-</div>
