@@ -15,7 +15,7 @@ const book = {
     updatedAt: '2021-06-01T02:13:01.000Z' //string
 };
 
-/*document.getElementById('bookForm').addEventListener('submit', async function(event) {
+document.getElementById('bookForm').addEventListener('submit', async function(event) {
   event.preventDefault();
   const title = document.querySelector('title').value;
   const author = document.querySelector('author').value;
@@ -43,7 +43,7 @@ const book = {
   };
   console.log(book);
   addBook(book);
-});*/
+});
 
 async function addBook(book) {
   try {

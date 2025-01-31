@@ -11,37 +11,73 @@
 
 <body>
     <form name="myform" id="bookForm">
-        <div class="header">
+        <div>
             <h1>Go Ahead, Add Your Favorite Book!</h1>
         </div>
         
-        <div class = "title">
+        <div>
             <h3>Book Title</h3>
-            <input type="text" placeholder="Favorite Book">
+            <input id="title" type="text" placeholder="Favorite Book">
         </div>
         
-        <div class = "author">
+        <div>
             <h3>Book Author</h3>
-            <input type="text" placeholder="Favorite Author">
+            <input id="author" type="text" placeholder="Favorite Author">
         </div>
         
-        <div class = "book_publisher">
+        <div>
             <h3>Book Publisher</h3>
-            <input type="text" placeholder="Favorite Publisher">
+            <input id="publisher" type="text" placeholder="Favorite Publisher">
         </div>
-        <br>
+        <div>
+            <h3>Published Date</h3>
+            <input id="publishedDate" type="date">
+        </div>
+        <div>
+            <h3>Book ISBN</h3>
+            <input id="isbn" type="text" placeholder="ISBN">
+        </div>
+        <div>
+            <h3>Book Genre</h3>
+            <input id="genre" type="text" placeholder="Favorite Genre">
+        </div>
+        <div>
+            <h3>Book Description </h3>
+            <input id="description" type="text" placeholder="Description">
+        </div>
+        <div>
+            <h3>Page Count </h3>
+            <input id="pageCount" type="text" placeholder="Page Count">
+        </div>
+        <div>
+            <select name="language" id="language">
+                <option>ITA</option>
+                <option selected="selected">ENG</option>
+                <option>FRE</option>
+              </select> 
+        </div>
+        <div>
+            <h3>Created</h3>
+            <input id="CreatedAt" type="date">
+        </div>
         
+        <div>
+            <h3>Updated</h3>
+            <input id="UpdatedAt" type="date">
+        </div>
         <div class = "add_book">
-            <button type="submit" id="mybutton">I Want That Book!</button>
+            <button type="submit" id="submit">I Want That Book!</button>
         </div>
         
     </form>
+
+    <script src="index.js"></script>
     
     
     
     <div class="stock">
     <h1>You Read It, We Got It!</h1>
-    <table border = "3">
+    <table>
         <tr>
             <th>Title</th>
             <th>Author</th>
