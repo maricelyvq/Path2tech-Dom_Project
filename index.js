@@ -24,16 +24,16 @@ document.getElementById('submit').addEventListener('click', function (event) {
   const publisher = document.querySelector('#publisher').value;
   const book = {
     title:title,
-    authot:author,
+    author:author,
     isbn:isbn,
-    publishedDate:"",
+    // publishedDate:"",
     publisher:publisher,
-    genre:"",
-    description:"",
-    pageCount:0,
-    language:"",
-    createdAt:"",
-    updatedAt:""
+    // genre:"",
+    // description:"",
+    // pageCount:0,
+    // language:"",
+    // createdAt:"",
+    // updatedAt:""
   };
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
@@ -61,7 +61,7 @@ async function addBook(book) {
 }
 
 
-
+/* Function to get all books from the API */  
 // async function getBooks() {
 //     const response = await fetch('https://bookstore-api-six.vercel.app/api/books');
 //     const data = await response.json();
