@@ -1,3 +1,4 @@
+const apiUrl = 'https://bookstore-api-six.vercel.app/api/books';
 /*Object to store the book data structure
 /*test data*/
 const book = {
@@ -14,61 +15,61 @@ const book = {
     createdAt: '2021-06-01T02:13:01.000Z', //string
     updatedAt: '2021-06-01T02:13:01.000Z' //string
 };
+let bookarray = []; //creating an array to store the book data
 
-/*document.getElementById('bookForm').addEventListener('submit', async function(event) {
+document.getElementById('submit').addEventListener('click', function (event) {
   event.preventDefault();
-  const title = document.querySelector('title').value;
-  const author = document.querySelector('author').value;
-  const isbn = document.querySelectord('isbn').value;
-  const publishedDate = document.querySelector('publishedDate').value;
-  const publisher = document.querySelector('publisher').value;
-  const genre = document.querySelector('genre').value;
-  const description = document.querySelector('description').value;
-  const pageCount = document.querySelector('pageCount').value;
-  const language = document.querySelector('language').value;
-  const createdAt = document.querySelector('createdAt').value;   
-  const updatedAt = document.querySelector('updatedAt').value;
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
+  const isbn = document.querySelector('#isbn').value;
+  const publisher = document.querySelector('#publisher').value;
   const book = {
-    title,
-    author,
-    isbn,
-    publishedDate,
-    publisher,
-    genre,
-    description,
-    pageCount,
-    language,
-    createdAt,
-    updatedAt
+    title:title,
+    author:author,
+    isbn:isbn,
+    // publishedDate:"",
+    publisher:publisher,
+    // genre:"",
+    // description:"",
+    // pageCount:0,
+    // language:"",
+    // createdAt:"",
+    // updatedAt:""
   };
+  document.getElementById('title').value = '';
+  document.getElementById('author').value = '';
+  document.getElementById('isbn').value = '';
+  document.getElementById('publisher').value = '';
   console.log(book);
   addBook(book);
-});*/
+});
 
 async function addBook(book) {
   try {
-      const response = await fetch('https://bookstore-api-six.vercel.app/api/books', {
+      const response = await fetch(apiUrl, {
           method: 'POST',
           headers: {
-              'Content-Type': 'application/json'
-          },
+            'Content-Type': 'application/json'},
           body: JSON.stringify(book)
       });
       const json = await response.json();
-      console.log(json);
+      bookarray.push(json); //pushing the json data into the array
+      console.log(bookarray); // log the json response
+      
   } catch (error) {
       console.error('Error:', error);
   }
 }
-addBook(book);
 
-async function getBooks() {
-    const response = await fetch('https://bookstore-api-six.vercel.app/api/books');
-    const data = await response.json();
-    console.log(data);
-}
 
-getBooks();
+/* Function to get all books from the API */  
+// async function getBooks() {
+//     const response = await fetch(apiUrl);
+//     const data = await response.json();
+//     console.log(data);
+// }
+
+// getBooks();
 
 
 
