@@ -1,3 +1,4 @@
+const apiUrl = 'https://bookstore-api-six.vercel.app/api/books';
 /*Object to store the book data structure
 /*test data*/
 const book = {
@@ -45,7 +46,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
 
 async function addBook(book) {
   try {
-      const response = await fetch('https://bookstore-api-six.vercel.app/api/books', {
+      const response = await fetch(apiUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'},
@@ -63,7 +64,7 @@ async function addBook(book) {
 
 /* Function to get all books from the API */  
 // async function getBooks() {
-//     const response = await fetch('https://bookstore-api-six.vercel.app/api/books');
+//     const response = await fetch(apiUrl);
 //     const data = await response.json();
 //     console.log(data);
 // }
