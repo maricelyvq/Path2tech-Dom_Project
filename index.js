@@ -27,14 +27,14 @@ document.getElementById('submit').addEventListener('click', function (event) {
     title:title,
     author:author,
     isbn:isbn,
-    // publishedDate:"",
+    publishedDate:"",
     publisher:publisher,
-    // genre:"",
-    // description:"",
-    // pageCount:0,
-    // language:"",
-    // createdAt:"",
-    // updatedAt:""
+    genre:"",
+    description:"",
+    pageCount:0,
+    language:"",
+    createdAt:"",
+    updatedAt:""
   };
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
@@ -43,7 +43,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
   console.log(book);
   addBook(book);
 });
-
+/*Meocha function*/
 async function addBook(book) {
   try {
       const response = await fetch(apiUrl, {
@@ -61,7 +61,7 @@ async function addBook(book) {
   }
 }
 
-
+/* Maricely function*/
 /* Function to get all books from the API */  
 // async function getBooks() {
 //     const response = await fetch(apiUrl);
@@ -72,7 +72,7 @@ async function addBook(book) {
 // getBooks();
 
 
-
+/*Princess function*/
 /*function DeleteBook(id){
     fetch('https://bookstore-api-six.vercel.app/api/books/1', {
         method: 'DELETE',
