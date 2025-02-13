@@ -19,27 +19,27 @@ document.getElementById('bookForm').addEventListener('submit', async function(ev
   event.preventDefault();
   const title = document.querySelector('title').value;
   const author = document.querySelector('author').value;
-  const isbn = document.querySelectord('isbn').value;
-  const publishedDate = document.querySelector('publishedDate').value;
+  const isbn = document.querySelector('isbn').value;
   const publisher = document.querySelector('publisher').value;
+ /*const publishedDate = document.querySelector('publishedDate').value;
   const genre = document.querySelector('genre').value;
   const description = document.querySelector('description').value;
   const pageCount = document.querySelector('pageCount').value;
   const language = document.querySelector('language').value;
   const createdAt = document.querySelector('createdAt').value;   
-  const updatedAt = document.querySelector('updatedAt').value;
+  const updatedAt = document.querySelector('updatedAt').value;*/
   const book = {
-    title,
-    author,
-    isbn,
-    publishedDate,
-    publisher,
-    genre,
-    description,
-    pageCount,
-    language,
-    createdAt,
-    updatedAt
+    title: title,
+    author: author,
+    isbn: isbn,
+    publishedDate:"",
+    publisher: publisher,
+    genre:"",
+    description:"",
+    pageCount:"",
+    language:"",
+    createdAt:"",
+    updatedAt:""
   };
   console.log(book);
   addBook(book);
