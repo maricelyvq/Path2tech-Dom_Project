@@ -1,4 +1,4 @@
-const apiUrl = 'https://bookstore-api-six.vercel.app/api/books';
+// const apiUrl = 'https://bookstore-api-six.vercel.app/api/books';
 /*Object to store the book data structure
 /*test data*/
 const book = {
@@ -43,6 +43,29 @@ document.getElementById('submit').addEventListener('click', function (event) {
   console.log(book);
   addBook(book);
 });
+
+document.getElementById("infoForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+    let inputValue = document.getElementById("input-name").value;
+    if (inputValue.trim() === "") return;
+
+    let listItem = document.createElement("li");
+    listItem.textContent = inputValue;
+
+    let deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.classList.add("delete-btn");
+    deleteButton.onclick = function() {
+    listItem.remove();
+  };
+
+    listItem.appendChild(deleteButton);
+    document.getElementById("infoList").appendChild(listItem);
+
+    document.getElementById("infoInput").value = "";
+});
+
 /*Meocha function*/
 async function addBook(book) {
   try {
