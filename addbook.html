@@ -5,52 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Books</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addstyle.css">
+    <script src="addbook.js" defer></script>
 </head>
 
 <body>
-    <form name="addbookform" id="bookForm">
-        <div class="header">
-            <h1>Go Ahead, Add Your Favorite Book!</h1>
-        </div>
+    <div>
+        <header>
+            <h1>Welcome to Your Bookstore</h1>
+        </header>
+    
+        <nav>
+            <a href="#">Home</a>
+            <a href="#bestsellers">Best Sellers</a>
+            <a target="_blank" href="addbook.html">Manage Books</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="container">
+            <h1 id="heading">ADD YOUR BOOK</h1>
+            <img src="pic1.jpg" alt="opens books stacked on top of each other">
+    
+            <form  id="infoForm">
+                <span><b>Book Title:</b></span><br>
+                <input type="text" id="input-name" placeholder="Title">
+                <hr/>
         
-        <div class = "title">
-            <h3>Book Title</h3>
-            <input type="text" id="title" placeholder="Favorite Book">
-        </div>
+                <span><b>Book Author:</b></span><br>
+                <input type="text" id="input-author" placeholder="Author">
+                <hr />
         
-        <div class = "author">
-            <h3>Book Author</h3>
-            <input type="text" id="author"  placeholder="Favorite Author">
-        </div>
-        <div class = "isbn">
-            <h3>Book isbn</h3>
-            <input type="text" id="isbn" placeholder="Isbn">
-        </div>
-        <div class = "book_publisher">
-            <h3>Book Publisher</h3>
-            <input type="text" id="publisher" placeholder="Favorite Publisher">
-        </div>
-        <br>
-        
-        <div class = "add_book">
-            <button type="submit" id="submit">I Want That Book!</button>
-        </div>
-        
-    </form>
+                <span><b>Book Publisher:</b></span><br>
+                <input type="text" id="input-publisher" placeholder="Publisher">
+                <hr />
+            
+                <div class="press">
+                    <button type="submit">Add Book</button>
+                </div>
+                
+
+            </form>
+
+            <h3>Your Book List</h3>
+            <hr />
+            <ul id="infoList"></ul>
            
-    <div class="stock">
-    <h1>You Read It, We Got It!</h1>
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Publisher</th>
-        </tr>
-    </table>
-    </div> 
+        </div>
+ 
+    </div>
+
+    
+    
+    
+  
    <div> </div>  <!-- Maricely is working here -->
-    <script src="index.js"></script>
+    
 </body>
 </html>
 
