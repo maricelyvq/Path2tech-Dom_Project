@@ -94,14 +94,18 @@ li {
 }
 
 .book-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Text takes most of the space, button stays at the end */
+    align-items: center; /* Aligns text and button vertically */
     background: #f4f4f4;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
     width: 100%;
+}
+
+.book-text {
+    padding-right: 20px; /* Adds spacing between text and button */
 }
 
 .delete-btn {
@@ -112,9 +116,10 @@ li {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 10px;
+    text-align: center;
 }
 
 .delete-btn:hover {
     background: darkred;
 }
+
