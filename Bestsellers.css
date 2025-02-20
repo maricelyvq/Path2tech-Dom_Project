@@ -13,6 +13,16 @@ header {
     padding: 20px 0 ;
     font-size: 1.4em;
     font-weight: bold;
+    position: relative;
+}
+
+.home-icon {
+    position:absolute;
+    top: 10%;
+    left: 10px;
+    color: white;
+    font-size: larger;
+    
 }
 
 .bestseller-list {
