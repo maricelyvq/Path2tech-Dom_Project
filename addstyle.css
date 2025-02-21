@@ -51,7 +51,7 @@ img {
 
 .container {
     margin: 50px auto;
-    width: 28%;
+    width: 36%;
 }
 
 hr {
@@ -64,7 +64,7 @@ button {
     font-size: 15px;
     padding: 10px;
     display: block;
-    margin: auto;
+    margin: 0 55px;
 }
 
 h3 {
@@ -95,8 +95,8 @@ li {
 
 .book-item {
     display: grid;
-    grid-template-columns: 1fr auto; /* Text takes most of the space, button stays at the end */
-    align-items: center; /* Aligns text and button vertically */
+    grid-template-columns: 1fr auto;
+    align-items: center;
     background: #f4f4f4;
     margin: 5px 0;
     padding: 10px;
@@ -105,7 +105,7 @@ li {
 }
 
 .book-text {
-    padding-right: 20px; /* Adds spacing between text and button */
+    padding-right: 20px;
 }
 
 .delete-btn {
