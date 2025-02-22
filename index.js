@@ -66,7 +66,6 @@ document.getElementById("infoForm").addEventListener("submit", function(event) {
     document.getElementById("infoInput").value = "";
 });
 
-/*Meocha function*/
 async function addBook(book) {
   try {
       const response = await fetch(apiUrl, {
@@ -83,8 +82,6 @@ async function addBook(book) {
       console.error('Error:', error);
   }
 }
-
-/* Maricely function*/
 /* Function to get all books from the API */  
 // async function getBooks() {
 //     const response = await fetch(apiUrl);
@@ -95,7 +92,6 @@ async function addBook(book) {
 // getBooks();
 
 
-/*Princess function*/
 /*function DeleteBook(id){
     fetch('https://bookstore-api-six.vercel.app/api/books/1', {
         method: 'DELETE',

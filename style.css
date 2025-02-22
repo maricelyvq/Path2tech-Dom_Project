@@ -19,6 +19,14 @@
             font-size: 2.5rem;
         }
 
+        .para{
+            text-align: justify;
+            font-size: 1.5rem; 
+            margin: 100px;
+            margin-left: 200px;
+            margin-right: 200px;
+            
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -60,8 +68,8 @@
 
         .books {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 320px));
+            gap: .5rem;
             padding: 0 2rem;
         }
 
