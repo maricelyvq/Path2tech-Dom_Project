@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("infoForm");
     const bookList = document.getElementById("infoList");
 
-    const API_URL = "https://bookstore-api-six.vercel.app/api/books"; // Replace with actual API URL
+    const API_URL = "https://example.com/api/books";  // Replace with actual API URL
     let books = []; // Start with an empty array (no preloaded books)
 
     function displayBooks() {
